@@ -49,11 +49,10 @@ public class Empleado {
         this.antiguedad = antiguedad;
     }
     
-    public int bonoMonto(){
+    public boolean bonoMonto(){
         if(this.antiguedad>3){
-            return this.antiguedad*50000;
+            return true;
         }
-        return 0;
-    }
-    
+        return false;
+    }   
 }
